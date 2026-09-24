@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BikeStash — веломагазин</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#">🚲 BikeStash</a>
+    <nav>
+      <a href="#catalog">Каталог</a>
+      <a href="#cart">Корзина <span id="cart-count" class="badge">0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Велосипеды и аксессуары</h1>
+      <p>Всё для комфортной езды — от городских байков до шлемов и замков.</p>
+    </section>
+
+    <section id="catalog" class="container">
+      <h2>Каталог</h2>
+      <div id="products" class="grid"></div>
+    </section>
+
+    <section id="cart" class="container">
+      <h2>Корзина</h2>
+      <p id="cart-empty">Корзина пуста</p>
+      <ul id="cart-list" class="cart-list"></ul>
+      <div class="cart-footer">
+        <p class="total">Итого: <strong id="cart-total">0 ₽</strong></p>
+        <button id="checkout-btn" class="btn" disabled>Оформить заказ</button>
+      </div>
+      <p id="order-message" class="success" role="status" hidden>Заказ создан!</p>
+    </section>
+  </main>
+
+  <dialog id="order-modal">
+    <form id="order-form" method="dialog">
+      <h2>Оформление заказа</h2>
+      <label>Имя <input name="firstName" required></label>
+      <label>Фамилия <input name="lastName" required></label>
+      <label>Адрес доставки <input name="address" required></label>
+      <label>Телефон <input name="phone" type="tel" required pattern="[0-9+()\s\-]{6,}" placeholder="+7 900 000-00-00"></label>
+      <div class="form-actions">
+        <button type="button" id="cancel-btn" class="btn btn-light">Отмена</button>
+        <button type="submit" class="btn">Создать заказ</button>
+      </div>
+    </form>
+  </dialog>
+
+  <footer class="footer">© 2026 BikeStash</footer>
+  <script src="script.js"></script>
+</body>
+</html>
