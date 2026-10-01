@@ -1,10 +1,10 @@
 const products = [
   { id: 1, name: 'Городской велосипед Street 24"', price: 67000, image: 'images/street_tsb.jpg' },
   { id: 2, name: 'Горный велосипед Trail 29"', price: 42000, image: 'images/trail.jpg' },
-  { id: 3, name: 'Шоссейный велосипед Speed', price: 62000, icon: '🚴' },
-  { id: 4, name: 'Шлем Safe Ride', price: 3200, icon: '⛑️' },
-  { id: 5, name: 'Замок Strong Lock', price: 1500, icon: '🔒' },
-  { id: 6, name: 'Набор фонарей Night', price: 1100, icon: '🔦' }
+  { id: 3, name: 'Шоссейный велосипед Road 29"', price: 2200000, image: 'images/road.jpg' },
+  { id: 4, name: 'Трюковой велосипед BMX 20"', price: 52000, image: 'images/bmx.jpg' },
+  { id: 5, name: 'Горный велосипед Downhill 29" и 27.5"', price: 1500000, image: 'images/downhill.jpg' },
+  { id: 6, name: 'Шлем', price: 2500, image: 'images/helmet.jpeg' }
 ];
 
 const STORAGE_KEY = 'bikestash-cart';
